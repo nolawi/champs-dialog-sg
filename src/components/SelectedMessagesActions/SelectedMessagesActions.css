@@ -1,0 +1,51 @@
+/**
+ * Copyright 2017 dialog LLC <info@dlg.im>
+ */
+
+@import '../../styles/variables.css';
+
+:root {
+  --selected-messages-actions-font-family: var(--default-font-family);
+  --selected-messages-actions-height: 54px;
+}
+
+/* Reset */
+.container {
+  all: initial;
+}
+
+/* Styles */
+.container {
+  font-family: var(--selected-messages-actions-font-family);
+  width: 100%;
+  height: var(--selected-messages-actions-height);
+  padding: 0 var(--default-padding-small);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: var(--default-padding-small);
+  flex: 0 0 auto;
+}
+
+.buttonIcon {
+  fill: currentColor;
+  margin-top: -1px;
+  margin-right: 6px;
+}
+
+.buttonText {
+  vertical-align: middle;
+}
+
+.text {
+  font-size: var(--default-font-size-small);
+  flex: 1 1 auto;
+  text-align: center;
+  @apply --flex-fix;
+}

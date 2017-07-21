@@ -1,0 +1,177 @@
+[{
+    "name": "Interface",
+    "components": [
+      "Avatar",
+      "PeerAvatar",
+      "DoublePeerAvatar",
+      "PeerInfoTitle",
+      "Scroller",
+      "Dropdown",
+      "Icon",
+      "Spinner",
+      "Logo",
+      "Typing",
+      "ConnectionStatus",
+      "Tabs",
+      "Tooltip",
+      "ContextMenu",
+      "AvatarSelector",
+      "Archive",
+      "Lightbox",
+      "Dragndrop",
+      "Markdown",
+      "Image",
+      "CountryCodeSelector",
+      "ImageEdit",
+      "Overlay",
+      "SelectedMessagesActions",
+      "CheckButton",
+      "AudioPlayer"
+    ]
+  },
+  {
+    "name": "Buttons",
+    "components": [
+      "Button",
+      "ButtonNext",
+      "LinkButton",
+      "IconButton",
+      "LinkIconButton"
+    ]
+  },
+  {
+    "name": "Forms",
+    "content": "forms",
+    "components": [
+      "Input",
+      "InputNext",
+      "PhoneInput",
+      "Select",
+      "Checkbox",
+      "Radio",
+      "Switcher",
+      "Range",
+      "Fieldset"
+    ]
+  },
+  {
+    "name": "Emoji",
+    "components": [
+      "Emoji",
+      "EmojiList",
+      "EmojiButton"
+    ]
+  },
+  {
+    "name": "Plug & Play Forms",
+    "components": [
+      "AuthForm",
+      "UserNameAuthForm",
+      "AuthorizationForm",
+      "GenderSelect"
+    ]
+  },
+  {
+    "name": "Modals",
+    "components": [
+      "Modal"
+    ]
+  },
+  {
+    "name": "Plug & Play Modals",
+    "components": [
+      "AboutModal",
+      "JoinModal",
+      "AddContactModal",
+      "AttachmentModal",
+      "CreateNewModal",
+      "ProfileModal",
+      "PreferencesModal",
+      "AddMembersModal",
+      "EditGroupModal",
+      "FeedbackModal"
+    ]
+  },
+  {
+    "name": "Sidebar",
+    "components": [
+      "SidebarHeader",
+      "SidebarSearch",
+      "SidebarUnread",
+      "SidebarPeerItem",
+      "SidebarRecentItem",
+      "SidebarCallItem",
+      "SidebarFakeItem",
+      "SidebarFooter"
+    ]
+  },
+  {
+    "name": "Toolbar",
+    "components": [
+      "Toolbar",
+      "ToolbarInfoButton",
+      "ToolbarCallButton",
+      "ToolbarFavouriteButton",
+      "ToolbarMessagesButton",
+      "ToolbarSearchInput"
+    ]
+  },
+  {
+    "name": "Chat",
+    "components": [
+      "Message",
+      "MessageState",
+      "MessageContent",
+      "MessageReaction",
+      "MessageAttachment",
+      "MessageDivider",
+      "FakeMessage",
+      "EmptyChat"
+    ]
+  },
+  {
+    "name": "Activity",
+    "components": [
+      "ActivityHeader",
+      "ActivityProfile",
+      "ActivityList",
+      "ActivityListNotification",
+      "ActivityListInvite",
+      "ActivityInvite",
+      "ActivityListIntegration",
+      "ActivityIntegration",
+      "ActivityListMembers",
+      "ActivitySearch"
+    ]
+  },
+  {
+    "name": "Call",
+    "components": [
+      "Call",
+      "CallAvatar",
+      "CallFeedback"
+    ]
+  },
+  {
+    "name": "Contacts",
+    "components": [
+      "ContactSelector",
+      "ContactList"
+    ]
+  },
+  {
+    "name": "Discover",
+    "components": [
+      "Discover",
+      "DiscoverCard"
+    ]
+  },
+  {
+    "name": "Helpers",
+    "components": [
+      "Timer",
+      "Trigger",
+      "Confirm"
+    ]
+  }
+]

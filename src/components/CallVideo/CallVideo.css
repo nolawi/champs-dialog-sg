@@ -1,0 +1,48 @@
+/*
+ * Copyright 2017 dialog LLC <info@dlg.im>
+ */
+
+@import '../../styles/variables.css';
+
+.container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--call-video-background-color);
+}
+
+.ownVideos {
+  display: block;
+  position: absolute;
+  bottom: var(--default-padding);
+  right: var(--default-padding);
+  line-height: 0;
+  background-color: var(--call-video-background-color);
+  z-index: calc(var(--z-index-call) + 2);
+}
+
+.videoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+  @apply --flex-fix;
+}
+
+.ownVideo {
+  width: 160px;
+  height: 90px;
+}
+
+.mirrored {
+  transform: transformZ(0) scaleX(-1);
+}

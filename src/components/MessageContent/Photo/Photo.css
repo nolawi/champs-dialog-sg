@@ -1,0 +1,12 @@
+/**
+ * Copyright 2017 dialog LLC <info@dlg.im>
+ */
+
+@import '../../../styles/variables.css';
+
+.container {
+  border-radius: var(--message-photo-border-raduis);
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: 0 0 0 1px var(--message-photo-border-color);
+}

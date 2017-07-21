@@ -1,0 +1,61 @@
+/**
+ * Copyright 2017 dialog LLC <info@dlg.im>
+ */
+
+@import '../../styles/variables.css';
+
+/* Reset */
+.container {
+  all: initial;
+}
+
+/* Styles*/
+.container {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 61px;
+  padding: 12px 14px 12px 10px;
+  user-select: none;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.avatar {
+  width: var(--sidebar-fake-item-avatar-size);
+  height: var(--sidebar-fake-item-avatar-size);
+  margin-right: 11px;
+  border-radius: 50%;
+  background-color: var(--sidebar-fake-item-avatar-color);
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+.text {
+  flex: 1 0 auto;
+  align-self: center;
+}
+
+.line {
+  height: var(--sidebar-fake-item-line-height);
+  border-radius: 10px;
+  background-color: var(--sidebar-fake-item-line-color);
+}
+
+.lineAbout {
+  height: var(--sidebar-fake-item-second-line-height);
+  border-radius: 10px;
+  background-color: var(--sidebar-fake-item-second-line-color);
+  margin-top: 8px;
+}
+
+.counter {
+  width: var(--sidebar-fake-item-counter-size);
+  height: var(--sidebar-fake-item-counter-size);
+  margin-left: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  flex: 0 0 auto;
+}

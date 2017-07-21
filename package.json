@@ -1,0 +1,116 @@
+{
+  "name": "@dlghq/dialog-components",
+  "version": "0.138.0",
+  "description": "dialog Web Components",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "react",
+    "components",
+    "dialog"
+  ],
+  "scripts": {
+    "start": "styleguidist server",
+    "create": "node scripts/create-component.js",
+    "build": "npm-run-all --parallel build:*",
+    "build:l10n": "node scripts/compile-translations.js",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "lint": "npm-run-all lint:js lint:flow",
+    "lint:js": "eslint src/",
+    "lint:flow": "flow check",
+    "lint:css": "stylelint 'src/**/*.css'",
+    "format": "npm-run-all --parallel format:*",
+    "format:js": "eslint src/ --fix",
+    "format:css": "find src -path '**/*.css' -exec stylefmt {} \\;",
+    "preversion": "npm test",
+    "postversion": "npm run release",
+    "prerelease": "npm run build",
+    "release": "npm publish",
+    "postpublish": "git push --follow-tags",
+    "predocs": "styleguidist build",
+    "docs": "buildbranch gh-pages styleguide",
+    "coverage": "flow-coverage-report -i 'src/**/*.js' -x 'src/styleguide/**/*.js' -x 'src/utils/compileMessages.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dialogs/dialog-web-components.git"
+  },
+  "author": "Nikita Gusakov <gusnkt@gmail.com>",
+  "contributors": [
+    {
+      "name": "Oleg Shilov",
+      "email": "me@olegshilov.com",
+      "url": "https://github.com/olegshilov"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dialogs/dialog-web-components/issues"
+  },
+  "homepage": "https://dialogs.github.io/dialog-web-components",
+  "dependencies": {
+    "@dlghq/country-codes": "0.2.0",
+    "@dlghq/dialog-components": "^0.138.0",
+    "@dlghq/dialog-types": "1.27.0",
+    "@dlghq/dialog-utils": "0.6.5",
+    "@dlghq/emoji": "2.0.1",
+    "@dlghq/markdown": "1.1.0",
+    "@dlghq/react-l10n": "0.7.4",
+    "classnames": "2.2.5",
+    "clipboard": "1.7.1",
+    "croppie": "2.5.0",
+    "date-fns": "1.28.5",
+    "immutable": "3.8.1",
+    "key-event-to-string": "1.1.1",
+    "lodash": "4.17.4",
+    "photoswipe": "4.1.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-modal": "1.7.7",
+    "react-rangeslider": "2.1.0",
+    "react-select": "1.0.0-rc.5",
+    "react-tether": "0.5.7",
+    "react-transition-group": "1.2.0",
+    "react-virtualized": "9.9.0",
+    "react-virtualized-select": "3.1.0",
+    "screenfull": "3.3.1"
+  },
+  "devDependencies": {
+    "@dlghq/babel-preset-dialog": "3.4.1",
+    "@dlghq/eslint-config-dialog": "3.1.0",
+    "@dlghq/postcss-dialog": "1.11.1",
+    "@dlghq/stylelint-config-dialog": "0.11.0",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.1",
+    "buildbranch": "2.0.0",
+    "chalk": "2.0.1",
+    "ejs": "2.5.6",
+    "eslint": "4.2.0",
+    "eslint-plugin-react": "7.1.0",
+    "file-loader": "0.11.2",
+    "flow-bin": "0.50.0",
+    "flow-coverage-report": "0.3.0",
+    "glob": "7.1.2",
+    "inquirer": "3.2.0",
+    "jest": "20.0.4",
+    "jest-cli": "20.0.4",
+    "npm-run-all": "4.0.2",
+    "postcss-loader": "1.3.3",
+    "raw-loader": "0.5.1",
+    "react-styleguidist": "5.5.7",
+    "style-loader": "0.18.2",
+    "stylefmt": "6.0.0",
+    "stylelint": "7.13.0",
+    "svg-sprite-loader": "0.3.1",
+    "webpack": "2.6.1",
+    "yml-loader": "2.1.0"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@dlghq)"
+    ]
+  }
+}

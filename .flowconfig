@@ -1,0 +1,42 @@
+[ignore]
+.*/__tests__/.*
+.*/test/.*
+.*/scripts/.*
+.*/react/node_modules/.*
+.*/fbjs/node_modules/.*
+.*/node_modules/invariant/.*
+.*/node_modules/flow-coverage-report/.*
+.*/node_modules/jss/.*
+<PROJECT_ROOT>/src/utils/compileMessages.js
+
+# Incorrect parsing
+.*/findup/.*
+.*/stylelint/.*
+.*/systemjs-builder/.*
+
+
+[include]
+./node_modules/react
+./node_modules/fbjs/lib
+./node_modules/immutable
+
+[libs]
+./node_modules/fbjs/flow/lib
+./node_modules/@dlghq/dialog-utils/lib
+
+[options]
+emoji=true
+module.system=haste
+module.use_strict=true
+
+module.file_ext=.js
+module.file_ext=.json
+module.name_mapper='.*\.css$' -> 'CSSModule'
+module.name_mapper='.*\.mp3$' -> 'AssetModule'
+module.name_mapper='.*\.png$' -> 'AssetModule'
+module.name_mapper='.*\.svg$' -> 'AssetModule'
+
+suppress_type=$FlowIssue
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+
+esproposal.class_static_fields=enable

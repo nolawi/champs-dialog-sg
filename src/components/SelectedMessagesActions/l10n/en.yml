@@ -1,0 +1,4 @@
+delete: Delete
+forward: Forward
+reply: Reply
+text: "<b>{count}</b> messages selected"

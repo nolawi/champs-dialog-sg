@@ -1,0 +1,120 @@
+/**
+ * Copyright 2017 dialog LLC <info@dlg.im>
+ */
+
+@import '../../styles/variables.css';
+
+/* Reset */
+.container {
+  all: initial;
+}
+
+/* Styles */
+.container {
+  display: flex;
+  font-family: var(--sidebar-footer-font-family);
+  height: var(--sidebar-footer-height);
+  background-color: var(--sidebar-footer-background);
+  box-shadow: inset 0 1px 0 0 var(--sidebar-footer-border-color);
+  flex-flow: row;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+}
+
+.button {
+  flex: 1 1 auto;
+  @apply --flex-fix;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    & .icon {
+      fill: var(--sidebar-footer-button-color-hover);
+    }
+  }
+}
+
+.active {
+  & .icon {
+    fill: var(--sidebar-footer-button-color-active) !important;
+  }
+
+  &:hover {
+    & .icon {
+      opacity: 0.8;
+    }
+  }
+}
+
+.icon {
+  flex: 0 0 auto;
+  height: var(--sidebar-footer-button-icon-size);
+  width: var(--sidebar-footer-button-icon-size);
+  font-size: var(--sidebar-footer-button-icon-size);
+  line-height: var(--sidebar-footer-button-icon-size);
+  fill: var(--sidebar-footer-button-color);
+  transition: var(--default-transition-duration) ease;
+}
+
+.tooltip {
+  flex: 1 1 auto;
+  display: inline-flex;
+  @apply --flex-fix;
+}
+
+.wrapper {
+  flex: 0 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: var(--sidebar-footer-button-icon-size);
+  width: var(--sidebar-footer-button-icon-size);
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  display: flex;
+  background-color: var(--sidebar-footer-button-counter-background);
+  color: var(--sidebar-footer-button-counter-color);
+  border-radius: 100px;
+  font-size: var(--sidebar-footer-button-counter-font-size);
+  height: var(--sidebar-footer-button-counter-size);
+  width: var(--sidebar-footer-button-counter-size);
+  line-height: 1;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.counterBig {
+  font-size: calc(var(--sidebar-footer-button-counter-font-size) - 2);
+}
+
+.update {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--layout-sidebar-width);
+  height: var(--sidebar-footer-height);
+}
+
+.appear {
+  transform: translateZ(0) translateY(var(--sidebar-footer-height));
+  transform-origin: 50% 50%;
+}
+
+.appearActive {
+  transition: all var(--tooltip-transition-duration) ease-out;
+  transform: translateZ(0) translateY(0);
+}

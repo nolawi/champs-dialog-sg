@@ -1,0 +1,15 @@
+you: "You: "
+draft: "Draft: "
+
+code: Code
+quote: Quote
+
+photo: Photo
+voice: Voice
+video: Video
+contact: Contact
+sticker: Sticker
+document: Document
+location: Location
+unknown: ""
+unsupported: ""

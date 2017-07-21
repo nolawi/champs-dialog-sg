@@ -1,0 +1,28 @@
+/**
+ * Copyright 2017 dialog LLC <info@dlg.im>
+ */
+
+@import '../../styles/variables.css';
+
+.image {
+  display: inline-block;
+  overflow: hidden;
+  cursor: inherit;
+  vertical-align: text-bottom;
+  background-size: 100%;
+
+  /* hide emoji char */
+  color: transparent !important;
+  text-shadow: none;
+}
+
+.char {
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
+  word-break: break-all;
+  font-family: var(--font-emoji);
+  font-weight: normal;
+  text-size-adjust: 100%;
+  letter-spacing: 2px;
+}

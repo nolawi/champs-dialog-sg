@@ -1,0 +1,92 @@
+/**
+ * Copyright 2017 dialog LLC <info@dlg.im>
+ */
+
+@import '../../styles/variables.css';
+
+.container {
+  display: inline-flex;
+  cursor: inherit;
+  user-select: none;
+  vertical-align: middle;
+  background-color: transparent;
+  flex-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.inverted {
+  box-sizing: border-box;
+  cursor: inherit;
+  border-radius: 50%;
+  background-color: var(--icon-default-color);
+
+  & .icon {
+    fill: var(--icon-inverted-color);
+  }
+}
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: opacity var(--default-transition-duration) ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* Themes */
+.default {
+  fill: var(--icon-default-color);
+
+  &.inverted {
+    background-color: var(--icon-default-color);
+  }
+}
+
+.primary {
+  fill: var(--color-primary);
+
+  &.inverted {
+    background-color: var(--color-primary);
+  }
+}
+
+.success {
+  fill: var(--color-success);
+
+  &.inverted {
+    background-color: var(--color-success);
+  }
+}
+
+.danger {
+  fill: var(--color-danger);
+
+  &.inverted {
+    background-color: var(--color-danger);
+  }
+}
+
+.info {
+  fill: var(--color-info);
+
+  &.inverted {
+    background-color: var(--color-info);
+  }
+}
+
+.warning {
+  fill: var(--color-warning);
+
+  &.inverted {
+    background-color: var(--color-warning);
+  }
+}
