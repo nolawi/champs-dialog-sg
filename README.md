@@ -1,4 +1,4 @@
-dialog web components
+CHamps Dialog Components
 =====================
 
 [![CircleCI](https://img.shields.io/circleci/project/github/dialogs/dialog-web-components/master.svg)](https://circleci.com/gh/dialogs/dialog-web-components/tree/master)
@@ -11,8 +11,6 @@ dialog web components
 
 [![license](https://img.shields.io/github/license/dialogs/dialog-web-components.svg)](LICENSE)
 
-
-[Docs & Demo](https://dialogs.github.io/dialog-web-components/)
 
 
 Installation
