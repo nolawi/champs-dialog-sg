@@ -67,7 +67,6 @@ function handleSelect(peer) {
     active={nkt.peer.key === state.current}
     counter={0}
     favourite={true}
-    message={{ sender: nkt, content: { type: 'text', text: '-----BEGIN RSA PRIVATE KEY-----' } }}
     online={true}
     onSelect={handleSelect}
   />
