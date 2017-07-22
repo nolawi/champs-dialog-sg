@@ -495,7 +495,7 @@
   --switcher-dot-size: 16px;
   --switcher-background-color: #b8b8b8;
   --switcher-active-background-color: #ccc;
-  --switcher-checked-background-color: #4cd964;
+  --switcher-checked-background-color: #00aeef;
   --switcher-checked-active-background-color: #59ee72;
   --switcher-dot-color: #fff;
   --switcher-active-dot-color: #f6fff7;
@@ -513,7 +513,7 @@
   --select-background-color: #fff;
   --select-label-font-size: var(--default-font-size);
   --select-line-height: var(--input-label-line-height);
-  --select-label-color: #676c75;
+  --select-label-color: #00aeef;
   /* Tabs */
   --tabs-font-family: var(--default-font-family);
   --tabs-width: 220px;
@@ -536,7 +536,7 @@
   --toolbar-call-button-size: 28px;
   --toolbar-call-button-color: #999;
   --toolbar-call-button-color-hover: #666;
-  --toolbar-call-button-color-active: #4c4c4c;
+  --toolbar-call-button-color-active: #00aeef;
   --toolbar-info-button-size: 24px;
   --toolbar-info-button-color: var(--toolbar-call-button-color);
   --toolbar-info-button-color-hover: var(--toolbar-call-button-color-hover);
