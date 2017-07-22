@@ -35,7 +35,7 @@ module.exports = {
     color: {
       link: '#5856d6',
       linkHover: 'rgb(70, 69, 171)',
-      sidebarBackground: '##00aeef',
+      sidebarBackground: '#00aeef',
       errorBackground: '#e22d44'
     }
   },
