@@ -4,7 +4,7 @@
 @import '../../styles/variables.css';
 
 :root {
-  --button-next-background-color: #705eff;
+  --button-next-background-color: #00aeef;
   --button-next-hover-background-color: #9b40ff;
   --button-next-border-radius: 50px;
   --button-next-min-width: 140px;

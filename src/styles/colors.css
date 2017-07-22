@@ -4,21 +4,21 @@
 /* Color palette */
 :root {
   --violet-blue: #00aeef;
-  --vibrant-purple: #9b00c4;
+  --vibrant-purple: #db3832;
   --aqua: #2bf1d6;
   --cerulean: #006dc2;
   --red-orange: #ff3b00;
   --dark-periwinkle: #5856d6;
-  --violet-blue-two: #4800cc;
+  --violet-blue-two: #db3832;
   --purple-blue: #6b27e6;
-  --lightish-green: #4cd964;
-  --weird-green: #59ee72;
+  --lightish-green: #00aeef;
+  --weird-green: #db3832;
   --pinkish-grey: #ccc;
   --greyish: #b8b8b8;
   --marigold: #ffc800;
   --red-orange-two: #ff4000;
   --orange-yellow: #ffae00;
-  --leafy-green: #3eca42;
+  --leafy-green: #00aeef;
   --purple: #791499;
   --green-blue: #00b28a;
   --cerulean-two: #067fc5;
@@ -32,9 +32,9 @@
   --pinkish-grey-two: #cbcbcb;
   --neon-red: #ff1935;
   --white: #f5f5f5;
-  --medium-green: #3bbf51;
+  --medium-green: #00aeef;
   --greyish-two: #b7b6b6;
-  --violet-blue-three: #7103cd;
+  --violet-blue-three: #00aeef;
   --ultramarine: #2c00b4;
   --black-65: rgba(51, 51, 51, 0.65);
   --lipstick: #e22d44;
